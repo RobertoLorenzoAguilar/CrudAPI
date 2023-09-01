@@ -81,11 +81,7 @@ select * from DestinoRuta;
 <!-- PROJECT LOGO -->
 <br />
 
-<p align="center">
-  <a>
-    <img src="Images/Haabilitar_Autentificacion_SQL.PNG" alt="Logo">
-  </a>  
-</p>
+
 
 <p align="center">
   <a>
@@ -125,19 +121,30 @@ select * from DestinoRuta;
 
 # Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework modo Databasefirst
 
-1)Una vez generado el proyecto instalar con el gestor de paquetes de nutget las siguientes librerias:
+1) Una vez generado el proyecto instalar con el gestor de paquetes de nutget las siguientes librerias:
 "procurar que sean las versiones recientes estables"
 ~~~
  microsoft.entityframeworkcore.tools
  microsoft.entityframeworkcore.sqlserver  
 ~~~
 
-2) Generar el contexto y modelos a partir de la base de datos mediante package manager console:
+Generar el contexto y modelos a partir de la base de datos mediante package manager console:
+mediante credenciales sql:
 ~~~
- Scaffold-DbContext "Server=(local); Database=ControlAutosDB; user id=lorenzo; pwd= 123; Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
- Scaffold-DbContext "Server=(local); DataBase=ControlAutosDB; Integrated Security=true; Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+ Scaffold-DbContext "Server=(local); Database=ControlAutosDB; user id=lorenzo; pwd= 123; Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models 
 ~~~
 
+mediante autentificacion de windows:
+~~~
+Scaffold-DbContext "Server=(local); DataBase=ControlAutosDB; Integrated Security=true; Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+~~~
 
+Recuerda tener habilitada las conecciones en el administrador de sql
+<p align="center">
+  <a>
+    <img src="Images/Haabilitar_Autentificacion_SQL.PNG" alt="Logo">
+  </a>  
+</p>
 
- [<img src="Images/ER.PNG" alt="Logo">](url)
+Al terminar deberian aparecer la carpeta models, con los modelos y el contexto generado
+ [<img src="Images/ModelsEF.PNG" alt="Logo">](url)
