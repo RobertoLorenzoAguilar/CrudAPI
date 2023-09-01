@@ -148,3 +148,27 @@ Recuerda tener habilitada las conecciones en el administrador de sql
 
 Al terminar deberian aparecer la carpeta models, con los modelos y el contexto generado
  [<img src="Images/ModelsEF.PNG" alt="Logo">](url)
+
+Debemos mover la cadena de \Models\ControlAutosDbContext.cs
+[<img src="Images/CadenaContext.PNG" alt="Logo">](url)
+
+
+appsettings.json
+``` json
+{
+  "ConnectionStrings": {
+    "cadenaSql": " Server=(local); DataBase=ControlAutosDB; Integrated Security=true; Encrypt=False"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+```
+
+
+ 
