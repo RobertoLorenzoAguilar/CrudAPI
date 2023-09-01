@@ -175,12 +175,14 @@ Es necesario agregar la cadena en Program.cs
 builder.Services.AddDbContext<ControlAutosDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSql")));
 ~~~
 
+
+
+# Generar un controller vacio con el siguiente codigo basico
+``` C#
 using CrudAPICM.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-# Generar un controller vacio con el siguiente codigo basico
-``` C#
 namespace CrudAPICM.Controllers
 {
     [Route("api/[controller]")]
