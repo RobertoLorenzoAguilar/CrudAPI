@@ -11,10 +11,10 @@ Desacoplando el Front-End
     <li>
       <a href="#El archivo principal>El archivo principal</a>
       <ul>
-        <li><a href="#Prerrequisitos">Creación de la Basede de Datos en SQL Managment Studio</a></li>
+        <li><a href="#Prerrequisitos">Creación de la Base de Datos en SQL Managment Studio</a></li>
         <li><a href="#Prerrequisitos">Creación Proyecto con Visual Studio tipo API Web Core 6.0</a></li>
-        <li><a href="#Prerrequisitos">Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework Databe Databasefirst</a></li>
-        <li><a href="#Prerrequisitos">Testeo manual de end-points "Get, Post, Put, Delete mediante Visual Code extension Postman </a></li>
+        <li><a href="#Prerrequisitos">Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework modo Databasefirst</a></li>
+        <li><a href="#Prerrequisitos">Testeo manual de end-points "Get, Post, Put, Delete" mediante Visual Code extension Postman </a></li>
         <li><a href="#TODO">TODO</a></li>
         <li><a href="#Tecnologias">Tecnologías</a></li>
       </ul>
