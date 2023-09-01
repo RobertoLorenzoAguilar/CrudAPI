@@ -24,7 +24,7 @@ Desacoplando el Front-End
   </ol>
 </details>
 
-## SQL to be formated
+## SQL Query
  
 ``` sql
 /* Creacion de la base de datos */
