@@ -122,3 +122,18 @@ select * from DestinoRuta;
     <img src="Images/PostManExtension.PNG" alt="Logo">
   </a>
 </p>
+
+# Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework modo Databasefirst
+
+## Prerrequisitos
+
+Una vez generado el proyecto instalar con el gestor de paquetes de nutget las siguientes librerias:
+"procurar que sean las versiones recientes estables"
+~~~
+ microsoft.entityframeworkcore.tools
+ microsoft.entityframeworkcore.sqlserver 
+~~~
+
+
+
+ <img src="Images/ER.PNG" alt="Logo">
