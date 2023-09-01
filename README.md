@@ -11,6 +11,8 @@ Desacoplando el Front-End
     <li>
       <a href="#El archivo principal>El archivo principal</a>
       <ul>
+        <li><a href="#Prerrequisitos">Diagramado de Interfaz grafica de usuario (GUI) Web con Balsamiq</a></li>
+        <li><a href="#Prerrequisitos">Modelado de bases de datos relacionales en UML</a></li>
         <li><a href="#Prerrequisitos">Creación de la Base de Datos en SQL Managment Studio</a></li>
         <li><a href="#Prerrequisitos">Creación Proyecto con Visual Studio tipo API Web Core 6.0</a></li>
         <li><a href="#Prerrequisitos">Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework modo Databasefirst</a></li>
@@ -25,6 +27,13 @@ Desacoplando el Front-End
 
 <!-- PROJECT LOGO -->
 <br />
+
+<p align="center">
+  <a>
+    <img src="Images/Haabilitar_Autentificacion_SQL.PNG" alt="Logo">
+  </a>  
+</p>
+
 <p align="center">
   <a>
     <img src="Images/CrudAPI_MC.PNG" alt="Logo">
