@@ -125,8 +125,6 @@ select * from DestinoRuta;
 
 # Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework modo Databasefirst
 
-## Prerrequisitos
-
 Una vez generado el proyecto instalar con el gestor de paquetes de nutget las siguientes librerias:
 "procurar que sean las versiones recientes estables"
 ~~~
@@ -136,4 +134,4 @@ Una vez generado el proyecto instalar con el gestor de paquetes de nutget las si
 
 
 
- <img src="Images/ER.PNG" alt="Logo">
+ [<img src="Images/ER.PNG" alt="Logo">](url)
