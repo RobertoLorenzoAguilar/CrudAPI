@@ -202,3 +202,11 @@ namespace CrudAPICM.Controllers
     }
 }
 ```
+Agregar los siguientes End-Points para el CRUD basico
+``` C#
+// GET: api/GetRutas
+// GET: api/GetRutaId/5        
+// POST: api/GetRutas
+// PUT: api/PutRuta/5
+// DELETE: api/DeleteRuta/5      
+```
