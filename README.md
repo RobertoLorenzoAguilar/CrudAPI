@@ -54,3 +54,9 @@ Desacoplando el Front-End
     <img src="Images/EliminandoInfoDefault.PNG" alt="Logo">
   </a>
 </p>
+
+<p align="center">
+  <a>
+    <img src="Images/PostManExtension.PNG" alt="Logo">
+  </a>
+</p>
