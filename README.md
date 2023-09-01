@@ -26,6 +26,13 @@ Desacoplando el Front-End
   </ol>
 </details>
 
+
+# Diagrama Entidad Relación
+Desacoplando el Front-End 
+
+ <img src="Images/ER.PNG" alt="Logo">
+
+
 ## SQL Query
  
 ``` sql
