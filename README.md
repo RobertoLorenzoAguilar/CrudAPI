@@ -170,5 +170,7 @@ appsettings.json
 
 ```
 
-
- 
+Es necesario agregar la cadena en Program.cs
+~~~
+builder.Services.AddDbContext<ControlAutosDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSql")));
+~~~
