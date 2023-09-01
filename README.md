@@ -125,11 +125,17 @@ select * from DestinoRuta;
 
 # Creación modelos mediante Object Relacional Mapping (ORM) Entitiy Framework modo Databasefirst
 
-Una vez generado el proyecto instalar con el gestor de paquetes de nutget las siguientes librerias:
+1)Una vez generado el proyecto instalar con el gestor de paquetes de nutget las siguientes librerias:
 "procurar que sean las versiones recientes estables"
 ~~~
  microsoft.entityframeworkcore.tools
- microsoft.entityframeworkcore.sqlserver 
+ microsoft.entityframeworkcore.sqlserver  
+~~~
+
+2) Generar el contexto y modelos a partir de la base de datos mediante package manager console:
+~~~
+ Scaffold-DbContext "Server=(local); Database=ControlAutosDB; user id=lorenzo; pwd= 123; Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+ Scaffold-DbContext "Server=(local); DataBase=ControlAutosDB; Integrated Security=true; Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
 ~~~
 
 
