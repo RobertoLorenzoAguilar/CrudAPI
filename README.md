@@ -210,3 +210,21 @@ Agregar los siguientes End-Points para el CRUD basico
 // PUT: api/PutRuta/5
 // DELETE: api/DeleteRuta/5      
 ```
+
+Una vez listos los end-points habilidar las politicas de dominio crusado en program.cs para poder consumir la api desde otro dominio.
+
+``` C#
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PoliticaCliente",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+        });
+
+});
+
+app.UseCors("PoliticaCliente");
+```
