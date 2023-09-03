@@ -33,6 +33,21 @@ Desacoplando el Front-End
  <img src="Images/ER.PNG" alt="Logo">
 
 
+# Bosquejos
+
+# Diagrama Diseño GUI
+Bosquejos tentativos
+
+ <img src="Images/GestionDesignMain.PNG" alt="Logo">
+
+
+# Diagrama Diseño GUI
+Bosquejos tentativos
+
+ <img src="Images/GestionDesign.PNG" alt="Logo">
+
+
+
 ## SQL Query
  
 ``` sql
