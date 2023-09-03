@@ -38,13 +38,13 @@ Desacoplando el Front-End
 # Diagrama Diseño GUI
 Bosquejos tentativos
 
- <img src="Images/GestionDesignMain.PNG" alt="Logo">
+ <img src="Images/GestinDesignMain.PNG" alt="Logo">
 
 
 # Diagrama Diseño GUI
 Bosquejos tentativos
 
- <img src="Images/GestionDesign.PNG" alt="Logo">
+ <img src="Images/GestinDesign.PNG" alt="Logo">
 
 
 
