@@ -256,6 +256,7 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader()
             .AllowAnyMethod();
         });
+app.UseCors("PoliticaCliente");
 ```
 
 Recuerda tener habilitada las conecciones en el administrador de sql
@@ -275,5 +276,5 @@ Recuerda tener habilitada las conecciones en el administrador de sql
 PD: Lo pienso migrar a un frameqork basado en componetes como React
 });
 
-app.UseCors("PoliticaCliente");
+
 
