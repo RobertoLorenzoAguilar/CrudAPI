@@ -259,13 +259,13 @@ builder.Services.AddCors(options =>
 app.UseCors("PoliticaCliente");
 ```
 
-Recuerda tener habilitada las conecciones en el administrador de sql
+1) client
 <p align="center">
   <a>
     <img src="Images/tomala.PNG" alt="Logo">
   </a>  
 </p>
-Recuerda tener habilitada las conecciones en el administrador de sql
+2) client
 <p align="center">
   <a>
     <img src="Images/tomala2.PNG" alt="Logo">
