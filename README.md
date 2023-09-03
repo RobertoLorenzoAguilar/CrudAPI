@@ -32,7 +32,67 @@ Desacoplando el Front-End
 
  <img src="Images/ER.PNG" alt="Logo">
 
+## SQL Query
+ 
+``` sql
+/* Creacion de la base de datos */
+Create Database ControlAutosDB
 
+USE [ControlAutosDB]
+GO
+/****** Object:  Table [dbo].[DestinoRuta]    Script Date: 9/3/2023 10:45:41 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[DestinoRuta](
+	[IdDestino] [int] IDENTITY(1,1) NOT NULL,
+	[NombreDestino] [varchar](100) NOT NULL,
+	[Estatus] [bit] NOT NULL,
+	[IdRuta] [int] NOT NULL,
+	[RutaDestino] [varchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IdDestino] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Ruta]    Script Date: 9/3/2023 10:45:41 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Ruta](
+	[IdRuta] [int] IDENTITY(1,1) NOT NULL,
+	[NombreRuta] [varchar](60) NOT NULL,
+	[RutaInicio] [varchar](60) NOT NULL,
+	[Estatus] [bit] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IdRuta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[DestinoRuta]  WITH CHECK ADD  CONSTRAINT [FK_Cargo] FOREIGN KEY([IdRuta])
+REFERENCES [dbo].[Ruta] ([IdRuta])
+GO
+ALTER TABLE [dbo].[DestinoRuta] CHECK CONSTRAINT [FK_Cargo]
+GOstatus nota:
+--No existe el tipo de dato boolean, pero sí el tipo de dato bit. 
+--Y un bit, como todos sabemos, puede ser un 1 o un 0.
+
+/* insercion en tabla */
+Insert into Ruta(NombreRuta,InicioRuta, Estatus) VALUES ('Rio Sonora','29.07447500276877, -110.94526290893555',1)
+
+/* insercion en tabla */
+Insert into DestinoRuta(Destino,NombreDestino Estatus, IdRuta) VALUES 
+('29.07447500276877, -111.00105285644531',"Destino a" 1, 1),
+('29.094127073996578, -110.93273162841798',"Destino b" 1,1 ),
+('29.094127073996578, -110.93273162841798',"Destino c", 1)
+
+select * from Ruta;
+select * from DestinoRuta;
+```
 # Bosquejos
 
 # Diagrama Diseño GUI
@@ -47,48 +107,6 @@ Bosquejos tentativos
  <img src="Images/GestinDesign.PNG" alt="Logo">
 
 
-
-## SQL Query
- 
-``` sql
-/* Creacion de la base de datos */
-Create Database ControlAutosDB
-
-/* Seleccion base de datos a trabajar */
-Use ControlAutosDB;
-
-/* creacion de tabla */
-Create Table Ruta(
-	IdRuta int primary key identity(1,1),
-	NombreRuta varchar(60) not null,
-	InicioRuta varchar(60) not null,
-	Estatus   bit not null,		
-)
-
-/* creacion de tabla */
-Create Table DestinoRuta(
-	IdDestino int primary key identity(1,1),
-	Destino varchar(100) not null,
-	Estatus   bit not null,		
-	IdRuta int not null,
-	CONSTRAINT FK_Cargo FOREIGN KEY (IdRuta) REFERENCES Ruta(IdRuta)
-)
--- Columna Estatus nota:
---No existe el tipo de dato boolean, pero sí el tipo de dato bit. 
---Y un bit, como todos sabemos, puede ser un 1 o un 0.
-
-/* insercion en tabla */
-Insert into Ruta(NombreRuta,InicioRuta, Estatus) VALUES ('Rio Sonora','29.07447500276877, -110.94526290893555',1)
-
-/* insercion en tabla */
-Insert into DestinoRuta(Destino, Estatus, IdRuta) VALUES 
-('29.07447500276877, -111.00105285644531', 1, 1),
-('29.094127073996578, -110.93273162841798', 1,1 ),
-('29.094127073996578, -110.93273162841798', 1, 1)
-
-select * from Ruta;
-select * from DestinoRuta;
-```
 
 
 
