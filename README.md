@@ -257,6 +257,21 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
         });
 
+Recuerda tener habilitada las conecciones en el administrador de sql
+<p align="center">
+  <a>
+    <img src="Images/tomala.PNG" alt="Logo">
+  </a>  
+</p>
+Recuerda tener habilitada las conecciones en el administrador de sql
+<p align="center">
+  <a>
+    <img src="Images/tomala2.PNG" alt="Logo">
+  </a>  
+</p>
+
+
+PD: Lo pienso migrar a un frameqork basado en componetes como React
 });
 
 app.UseCors("PoliticaCliente");
