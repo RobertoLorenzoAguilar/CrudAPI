@@ -273,7 +273,22 @@ app.UseCors("PoliticaCliente");
 </p>
 
 
-PD: Lo pienso migrar a un frameqork basado en componetes como React
+Si se presentan errores por cuestion de referencias cruzadas "no se pueden guardar los datos por la extension de exceso de memmoria y afecta la deserializacion mayor a 32 agregar la siguiente configuracion en program.cs file" 
+``` C
+// Ignorare Referencias Cruzada-
+builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+```
+Asegurate que cuando pruebes con swager el objeto relacionado no sea del tipo string.
+
+<p align="center">
+  <a>
+    <img src="Images/swager.PNG" alt="Logo">
+  </a>  
+</p>
+
+PD: Lo pienso migrar a un framework basado en componetes como React
 });
 
 
