@@ -288,6 +288,17 @@ Asegurate que cuando pruebes con swager el objeto relacionado no sea del tipo st
   </a>  
 </p>
 
+
+Cambiar en el modelo la referencia a nula "Si no se usaran clases tipo Data tranferer object (DTO)"
+<p align="center">
+  <a>
+    <img src="Images/ValorNuloObjetoReferencia.PNG" alt="Logo">
+  </a>  
+</p>
+
+
+
+
 PD: Lo pienso migrar a un framework basado en componetes como React
 });
 
