@@ -305,7 +305,6 @@ Recuerda habilitar el modo cascada para la eliminacion en caso de ser necesario,
 </p>
 
 
-![image](https://github.com/RobertoLorenzoAguilar/CrudAPI/assets/48602725/ea878b9c-d542-45cc-95d4-e9d95d7782ff)
 
 
 PD: Lo pienso migrar a un framework basado en componetes como React
