@@ -300,7 +300,7 @@ Cambiar en el modelo la referencia a nula "Si no se usaran clases tipo Data tran
 Recuerda habilitar el modo cascada para la eliminacion en caso de ser necesario, se puede realizar de muchas maneras por el gestor de microsoft SQL server es una manera de realizarlo
 <p align="center">
   <a>
-    <img src="Images/cascadaSQL" alt="Logo">
+    <img src="Images/cascadaSQL.PNG" alt="Logo">
   </a>  
 </p>
 
