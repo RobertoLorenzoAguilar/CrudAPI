@@ -284,7 +284,7 @@ Asegurate que cuando pruebes con swager el objeto relacionado no sea del tipo st
 
 <p align="center">
   <a>
-    <img src="Images/swager.PNG" alt="Logo">
+    <img src="Images/Swager.PNG" alt="Logo">
   </a>  
 </p>
 
