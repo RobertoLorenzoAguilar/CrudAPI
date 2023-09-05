@@ -297,6 +297,15 @@ Cambiar en el modelo la referencia a nula "Si no se usaran clases tipo Data tran
 </p>
 
 
+Recuerda habilitar el modo cascada para la eliminacion en caso de ser necesario, se puede realizar de muchas maneras por el gestor de microsoft SQL server es una manera de realizarlo
+<p align="center">
+  <a>
+    <img src="Images/cascadaSQL" alt="Logo">
+  </a>  
+</p>
+
+
+![image](https://github.com/RobertoLorenzoAguilar/CrudAPI/assets/48602725/ea878b9c-d542-45cc-95d4-e9d95d7782ff)
 
 
 PD: Lo pienso migrar a un framework basado en componetes como React
