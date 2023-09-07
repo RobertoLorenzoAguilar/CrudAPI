@@ -40,7 +40,7 @@ Create Database ControlAutosDB
 
 USE [ControlAutosDB]
 GO
-/****** Object:  Table [dbo].[DestinoRuta]    Script Date: 9/3/2023 10:45:41 AM ******/
+/****** Object:  Table [dbo].[DestinoRuta]    Script Date: 9/7/2023 12:08:58 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -57,7 +57,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Ruta]    Script Date: 9/3/2023 10:45:41 AM ******/
+/****** Object:  Table [dbo].[Ruta]    Script Date: 9/7/2023 12:08:58 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -75,23 +75,12 @@ PRIMARY KEY CLUSTERED
 GO
 ALTER TABLE [dbo].[DestinoRuta]  WITH CHECK ADD  CONSTRAINT [FK_Cargo] FOREIGN KEY([IdRuta])
 REFERENCES [dbo].[Ruta] ([IdRuta])
+ON UPDATE CASCADE
+ON DELETE CASCADE
 GO
 ALTER TABLE [dbo].[DestinoRuta] CHECK CONSTRAINT [FK_Cargo]
-GOstatus nota:
---No existe el tipo de dato boolean, pero sí el tipo de dato bit. 
---Y un bit, como todos sabemos, puede ser un 1 o un 0.
+GO
 
-/* insercion en tabla */
-Insert into Ruta(NombreRuta,InicioRuta, Estatus) VALUES ('Rio Sonora','29.07447500276877, -110.94526290893555',1)
-
-/* insercion en tabla */
-Insert into DestinoRuta(Destino,NombreDestino Estatus, IdRuta) VALUES 
-('29.07447500276877, -111.00105285644531',"Destino a" 1, 1),
-('29.094127073996578, -110.93273162841798',"Destino b" 1,1 ),
-('29.094127073996578, -110.93273162841798',"Destino c", 1)
-
-select * from Ruta;
-select * from DestinoRuta;
 ```
 # Bosquejos
 
