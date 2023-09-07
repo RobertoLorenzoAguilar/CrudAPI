@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudAPICM", "CrudAPICM\CrudAPICM.csproj", "{DADDF3B0-E61F-46DF-8994-5516997F5D98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DADDF3B0-E61F-46DF-8994-5516997F5D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADDF3B0-E61F-46DF-8994-5516997F5D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADDF3B0-E61F-46DF-8994-5516997F5D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADDF3B0-E61F-46DF-8994-5516997F5D98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86E070CA-484A-4F43-B0CD-E869CF916233}
+	EndGlobalSection
+EndGlobal
